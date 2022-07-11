@@ -2,7 +2,7 @@ import { Box, Center, Image, Heading, Text } from "@chakra-ui/react";
 
 const content = [
   { id: "1", title: "Builder & Content Creator" },
-  { id: "1", title: "(Full-stack | UI/UX | Marketing)" },
+  { id: "1", title: "(Full-stack | UI/UX | Startups)" },
   { id: "1", title: "theivanyeung@gmail.com" },
 ];
 
@@ -18,7 +18,7 @@ const Intro = () => {
       <Box flexShrink={0} align={"center"}>
         <Image src={"./images/profile-image.png"} />
       </Box>
-      <Center display={{ base: "none", lg: "flex" }} ml={"8.06vw"}>
+      <Center display={{ base: "none", lg: "flex" }} ml={"7vw"}>
         <Box align={"center"}>
           <Heading
             color={"white"}
@@ -35,6 +35,7 @@ const Intro = () => {
               color={"white"}
               fontSize={"2xl"}
               letterSpacing={"0.3em"}
+              lineHeight={"64px"}
             >
               {contentItem.title}
             </Text>
@@ -57,7 +58,8 @@ const Intro = () => {
               key={contentItem.id}
               color={"white"}
               fontSize={"2.4vw"}
-              letterSpacing={"0.3em"}
+              letterSpacing={"0.2em"}
+              lineHeight={"45px"}
             >
               {contentItem.title}
             </Text>

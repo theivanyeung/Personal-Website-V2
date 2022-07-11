@@ -20,17 +20,17 @@ const navData = [
   {
     name: "About",
     id: "about",
-    path: "",
+    path: "/about",
   },
   {
     name: "Projects",
     id: "projects",
-    path: "",
+    path: "/project",
   },
   {
     name: "Content",
     id: "content",
-    path: "",
+    path: "/content",
   },
 ];
 
@@ -39,7 +39,7 @@ const Header = () => {
 
   return (
     <Box w={"full"} h={"5em"}>
-      <Flex ml={"5em"} mr={"5em"} h={"5em"} align={"center"}>
+      <Flex ml={"5em"} mr={"5em"} h={"7em"} align={"center"}>
         <Image
           w={"194px"}
           h={"47px"}
@@ -89,14 +89,18 @@ const Header = () => {
               </Text>
             </Button>
           </Link>
-          <Link key={"github"} href={""}>
+          <a
+            rel={"noreferrer"}
+            target={"_blank"}
+            href={"https://github.com/theivanyeung"}
+          >
             <Button colorScheme={"whiteAlpha"} variant={"ghost"}>
               <Image
                 src={"./images/github-icon.png"}
                 alt={"porfolio's signature logo"}
               />
             </Button>
-          </Link>
+          </a>
         </HStack>
         <Box display={{ base: "inline-block", lg: "none" }}>
           <Menu id="navbar-menu">
@@ -117,9 +121,13 @@ const Header = () => {
               <Link href={""}>
                 <MenuItem>Resume</MenuItem>
               </Link>
-              <Link href={""}>
+              <a
+                rel={"noreferrer"}
+                target={"_blank"}
+                href={"https://github.com/theivanyeung"}
+              >
                 <MenuItem>Github</MenuItem>
-              </Link>
+              </a>
             </MenuList>
           </Menu>
         </Box>

@@ -16,7 +16,7 @@ import {
   TWITTER_LINK,
   LINKEDIN_LINK,
   YOUTUBE_LINK,
-} from "../constants";
+} from "../../constants";
 
 const social = [
   {
@@ -59,7 +59,7 @@ const social = [
 
 const Socials = () => {
   return (
-    <Box mt={"50px"} mb={"50px"}>
+    <Box mt={"200px"} mb={"200px"}>
       <Heading
         fontWeight={"light"}
         fontSize={"7xl"}
@@ -76,18 +76,19 @@ const Socials = () => {
         {social.map((socialItem) => (
           <Link href={socialItem.link}>
             <Button
-              w={"200px"}
-              mt={"25px"}
-              mb={"25px"}
-              mr={"25px"}
-              ml={"25px"}
+              w={"300px"}
+              h={"50px"}
+              mt={"50px"}
+              mb={"50px"}
+              mr={"50px"}
+              ml={"50px"}
               variant={"outline"}
               colorScheme={"whiteAlpha"}
               leftIcon={<Image src={socialItem.image} />}
             >
               <Text
                 fontWeight={"light"}
-                fontSize={"md"}
+                fontSize={"lg"}
                 letterSpacing={"0.15em"}
                 color={"white"}
               >

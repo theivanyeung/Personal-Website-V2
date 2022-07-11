@@ -11,12 +11,20 @@ export const YOUTUBE_LINK =
 /**
  * Projects
  */
-export const PRODICITY_LINK = "https://prodicity.io/";
+export const PRODICITY = "https://prodicity.io/";
 export const FUTURE_TECHNOLOGIES = "https://www.futuretechnologies.dev/";
 export const TITAN_ACACIA = "https://www.titanacacia.com/";
 export const HEXAHACKS = "https://hexahacks.com/";
 export const LANGSWAP = "https://www.langswap.com/";
 export const DAILY_BREW = "https://www.langswap.com/dailybrew";
+
+/**
+ * Posts
+ */
+export const GODFATHER = "https://youtu.be/miBLn8dtzg0";
+export const PODCAST = "https://youtu.be/v95U9-L0HFM";
+export const LEVELS = "https://youtu.be/wi2MKiGok14";
+export const GOODBYE = "https://youtu.be/oiFq7STs--k";
 
 /**
  * SEO contants

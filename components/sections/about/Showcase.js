@@ -1,6 +1,6 @@
 import { Box, Center, Flex, Image, Heading, Text } from "@chakra-ui/react";
 
-import { YOUTUBE_LINK, PRODICITY_LINK } from "../constants";
+import { YOUTUBE_LINK, PRODICITY } from "../../constants";
 
 const projects = [
   {
@@ -12,7 +12,7 @@ const projects = [
   },
   {
     id: "work",
-    link: PRODICITY_LINK,
+    link: PRODICITY,
     image: "./images/prodicity-icon.png",
     title: "Prodicity",
     text: "Gamified Productivity",
@@ -21,9 +21,9 @@ const projects = [
 
 const Showcase = () => {
   return (
-    <Box mt={"100px"} mb={"100px"}>
+    <Box align={"center"} mt={"100px"} mb={"100px"}>
       <Center
-        w={"70vw"}
+        w={"60vw"}
         bgColor={"rgba(149, 200, 216, 0.1)"}
         backdropFilter={"blur(12px)"}
         border={"2px solid #95C8D8"}
@@ -31,7 +31,7 @@ const Showcase = () => {
         display={{ base: "none", xxl: "block" }}
       >
         <Box mt={"96px"}>
-          <Flex w={"55vw"} justifyContent={"space-between"}>
+          <Flex w={"40vw"} justifyContent={"space-between"}>
             {projects.map((project) => (
               <Box key={project.id}>
                 <a rel={"noreferrer"} target={"_blank"} href={project.link}>
