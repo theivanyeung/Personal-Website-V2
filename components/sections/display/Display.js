@@ -1,4 +1,5 @@
-import { Box, Flex, Heading, Image, Link } from "@chakra-ui/react";
+import { Box, Flex, Heading } from "@chakra-ui/react";
+import { motion } from "framer-motion";
 
 const Display = (props) => {
   return (
@@ -24,7 +25,15 @@ const Display = (props) => {
             href={projectItem.link}
           >
             <Box m={"80px"} as={"button"}>
-              <Image src={projectItem.image} />
+              <motion.img
+                whileHover={{
+                  scale: 1.05,
+                  transition: {
+                    duration: 0.5,
+                  },
+                }}
+                src={projectItem.image}
+              />
             </Box>
           </a>
         ))}

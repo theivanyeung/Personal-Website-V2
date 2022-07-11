@@ -1,10 +1,12 @@
 import Head from "next/head";
-import { ChakraProvider } from "@chakra-ui/react";
+import { ChakraProvider, Container } from "@chakra-ui/react";
 
 import SEO from "../components/SEO";
 import customTheme from "../styles/customTheme";
+import Layout from "../components/layout/Layout";
+import Animate from "../components/animate/Animate";
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps, router }) {
   return (
     <ChakraProvider resetCss theme={customTheme}>
       <SEO />
@@ -17,7 +19,13 @@ function MyApp({ Component, pageProps }) {
           rel="stylesheet"
         />
       </Head>
-      <Component {...pageProps} />
+      <Layout bgImage={"url('./images/about-background.png')"} router={router}>
+        <Container maxW={"container.xl"} align={"center"}>
+          <Animate>
+            <Component {...pageProps} key={router.route} />
+          </Animate>
+        </Container>
+      </Layout>
     </ChakraProvider>
   );
 }

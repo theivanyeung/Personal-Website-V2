@@ -31,7 +31,7 @@ const Showcase = () => {
         display={{ base: "none", xxl: "block" }}
       >
         <Box mt={"96px"}>
-          <Flex w={"40vw"} justifyContent={"space-between"}>
+          <Flex w={"50vw"} justifyContent={"space-between"}>
             {projects.map((project) => (
               <Box key={project.id}>
                 <a rel={"noreferrer"} target={"_blank"} href={project.link}>

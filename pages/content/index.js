@@ -1,20 +1,14 @@
-import { Container } from "@chakra-ui/react";
-
-import Layout from "../../components/layout/Layout";
-import Header from "../../components/sections/Header";
 import Display from "../../components/sections/display/Display";
 import { PopularPosts } from "../../components/data/Card";
-import Copyright from "../../components/sections/Copyright";
+import Section from "../../components/animate/Section";
 
 const ContentPage = () => {
   return (
-    <Layout bgImage={"url('./images/content-background.png')"}>
-      <Header />
-      <Container maxW={"container.xl"} align={"center"}>
+    <div>
+      <Section delay={0.1}>
         <Display header={"POPULAR POSTS"} card={PopularPosts} />
-        <Copyright />
-      </Container>
-    </Layout>
+      </Section>
+    </div>
   );
 };
 

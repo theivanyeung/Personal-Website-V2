@@ -12,15 +12,14 @@ import {
   MenuList,
   MenuItem,
   IconButton,
-  useDisclosure,
 } from "@chakra-ui/react";
-import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
+import { HamburgerIcon } from "@chakra-ui/icons";
 
 const navData = [
   {
     name: "About",
     id: "about",
-    path: "/about",
+    path: "/",
   },
   {
     name: "Projects",
@@ -34,8 +33,8 @@ const navData = [
   },
 ];
 
-const Header = () => {
-  const { isOpen: isMobileNavOpen, onToggle } = useDisclosure();
+const Header = (props) => {
+  const { path } = props;
 
   return (
     <Box w={"full"} h={"5em"}>
@@ -57,7 +56,7 @@ const Header = () => {
           display={{ base: "none", lg: "flex" }}
         >
           {navData.map((navItem) => (
-            <Link key={navItem.id} href={navItem.path}>
+            <Link key={navItem.id} href={navItem.path} path={path}>
               <Button colorScheme={"whiteAlpha"} variant={"ghost"}>
                 <Text
                   letterSpacing={"5px"}
@@ -77,7 +76,7 @@ const Header = () => {
           align={"center"}
           display={{ base: "none", lg: "flex" }}
         >
-          <Link key={"resume"} href={""}>
+          <Link key={"resume"} href={""} path={path}>
             <Button colorScheme={"whiteAlpha"} variant={"outline"}>
               <Text
                 letterSpacing={"5px"}
@@ -93,6 +92,7 @@ const Header = () => {
             rel={"noreferrer"}
             target={"_blank"}
             href={"https://github.com/theivanyeung"}
+            path={path}
           >
             <Button colorScheme={"whiteAlpha"} variant={"ghost"}>
               <Image
@@ -106,7 +106,6 @@ const Header = () => {
           <Menu id="navbar-menu">
             <MenuButton
               as={IconButton}
-              onClick={onToggle}
               icon={<HamburgerIcon color={"white"} />}
               colorScheme={"whiteAlpha"}
               variant={"outline"}

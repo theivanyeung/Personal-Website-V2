@@ -1,22 +1,22 @@
-import { Container } from "@chakra-ui/react";
-
-import Layout from "../../components/layout/Layout";
-import Header from "../../components/sections/Header";
+import Section from "../../components/animate/Section";
 import Display from "../../components/sections/display/Display";
 import { Interned, PastProjects, Projects } from "../../components/data/Card";
-import Copyright from "../../components/sections/Copyright";
 
 const ProjectPage = () => {
   return (
-    <Layout bgImage={"url('./images/project-background.png')"}>
-      <Header />
-      <Container maxW={"container.xl"} align={"center"}>
+    <div>
+      <Section delay={0.1}>
         <Display header={"PROJECT"} card={Projects} />
+      </Section>
+
+      <Section delay={0.2}>
         <Display header={"INTERNED"} card={Interned} />
+      </Section>
+
+      <Section delay={0.3}>
         <Display header={"PAST PROJECTS"} card={PastProjects} />
-        <Copyright />
-      </Container>
-    </Layout>
+      </Section>
+    </div>
   );
 };
 
