@@ -34,7 +34,7 @@ const Bio = () => {
 
       <Flex w={"761px"} display={{ base: "none", lg: "flex" }}>
         <Box w={"113px"}>
-          <Image src={"./images/timeline.png"} />
+          <Image src={"./images/timeline.png"} alt={"timeline"} />
         </Box>
         <Box mt={"30px"} w={"648px"}>
           {timeline.map((data) => (

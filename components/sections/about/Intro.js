@@ -16,7 +16,7 @@ const Intro = () => {
       display={{ lg: "flex" }}
     >
       <Box flexShrink={0} align={"center"}>
-        <Image src={"./images/profile-image.png"} />
+        <Image src={"./images/profile-image.png"} alt={"profile photo"} />
       </Box>
       <Center display={{ base: "none", lg: "flex" }} ml={"7vw"}>
         <Box align={"center"}>

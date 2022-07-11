@@ -35,7 +35,7 @@ const Showcase = () => {
             {projects.map((project) => (
               <Box key={project.id}>
                 <a rel={"noreferrer"} target={"_blank"} href={project.link}>
-                  <Image src={project.image} />
+                  <Image src={project.image} alt={"project images"} />
                 </a>
                 <Heading
                   mt={"36px"}
@@ -89,7 +89,7 @@ const Showcase = () => {
             {projects.map((project) => (
               <Box mt={"36px"} key={project.id}>
                 <a rel={"noreferrer"} target={"_blank"} href={project.link}>
-                  <Image src={project.image} />
+                  <Image src={project.image} alt={"project image"} />
                 </a>
                 <Heading
                   mt={"24px"}

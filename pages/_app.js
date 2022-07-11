@@ -14,10 +14,7 @@ function MyApp({ Component, pageProps, router }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="shortcut icon" href="/favicon/favicon.ico" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&family=Inter:wght@400;500;600;700&display=swap"
-          rel="stylesheet"
-        />
+        <link rel="stylesheet" />
       </Head>
       <Layout bgImage={"url('./images/about-background.png')"} router={router}>
         <Container maxW={"container.xl"} align={"center"}>

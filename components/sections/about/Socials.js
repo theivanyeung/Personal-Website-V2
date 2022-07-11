@@ -72,7 +72,7 @@ const Socials = () => {
         justifyContent={"space-between"}
       >
         {social.map((socialItem) => (
-          <Link href={socialItem.link}>
+          <Link key={socialItem.id} href={socialItem.link}>
             <Button
               w={"300px"}
               h={"50px"}
