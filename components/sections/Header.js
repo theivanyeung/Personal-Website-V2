@@ -76,7 +76,12 @@ const Header = (props) => {
           align={"center"}
           display={{ base: "none", lg: "flex" }}
         >
-          <Link key={"resume"} href={""} path={path}>
+          <a
+            rel={"noreferrer"}
+            target={"_blank"}
+            href={"./files/resume.pdf"}
+            path={path}
+          >
             <Button colorScheme={"whiteAlpha"} variant={"outline"}>
               <Text
                 letterSpacing={"5px"}
@@ -87,7 +92,7 @@ const Header = (props) => {
                 Resume
               </Text>
             </Button>
-          </Link>
+          </a>
           <a
             rel={"noreferrer"}
             target={"_blank"}
@@ -113,17 +118,23 @@ const Header = (props) => {
             />
             <MenuList>
               {navData.map((navItem) => (
-                <Link key={navItem.id} href={navItem.path}>
+                <Link key={navItem.id} href={navItem.path} path={path}>
                   <MenuItem>{navItem.name}</MenuItem>
                 </Link>
               ))}
-              <Link href={""}>
+              <a
+                rel={"noreferrer"}
+                target={"_blank"}
+                href={"./files/resume.pdf"}
+                path={path}
+              >
                 <MenuItem>Resume</MenuItem>
-              </Link>
+              </a>
               <a
                 rel={"noreferrer"}
                 target={"_blank"}
                 href={"https://github.com/theivanyeung"}
+                path={path}
               >
                 <MenuItem>Github</MenuItem>
               </a>

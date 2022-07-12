@@ -14,15 +14,18 @@ const ResumeBtn = () => {
         colorScheme={"whiteAlpha"}
         display={{ base: "none", lg: "block" }}
       >
-        <Text
-          fontWeight={"light"}
-          fontSize={"5xl"}
-          letterSpacing={"0.2em"}
-          color={"white"}
-        >
-          RESUME
-        </Text>
+        <a rel={"noreferrer"} target={"_blank"} href={"./files/resume.pdf"}>
+          <Text
+            fontWeight={"light"}
+            fontSize={"5xl"}
+            letterSpacing={"0.2em"}
+            color={"white"}
+          >
+            RESUME
+          </Text>
+        </a>
       </Button>
+
       <Button
         w={"249px"}
         h={"67.5px"}
@@ -34,14 +37,16 @@ const ResumeBtn = () => {
         colorScheme={"whiteAlpha"}
         display={{ base: "block", lg: "none" }}
       >
-        <Text
-          fontWeight={"light"}
-          fontSize={"5xl"}
-          letterSpacing={"0.2em"}
-          color={"white"}
-        >
-          RESUME
-        </Text>
+        <a rel={"noreferrer"} target={"_blank"} href={"./files/resume.pdf"}>
+          <Text
+            fontWeight={"light"}
+            fontSize={"5xl"}
+            letterSpacing={"0.2em"}
+            color={"white"}
+          >
+            RESUME
+          </Text>
+        </a>
       </Button>
     </div>
   );

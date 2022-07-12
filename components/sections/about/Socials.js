@@ -1,12 +1,4 @@
-import {
-  Box,
-  Button,
-  Flex,
-  Heading,
-  Image,
-  Link,
-  Text,
-} from "@chakra-ui/react";
+import { Box, Button, Flex, Heading, Image, Text } from "@chakra-ui/react";
 
 import {
   INSTAGRAM_LINK,
@@ -72,7 +64,12 @@ const Socials = () => {
         justifyContent={"space-between"}
       >
         {social.map((socialItem) => (
-          <Link key={socialItem.id} href={socialItem.link}>
+          <a
+            key={socialItem.id}
+            rel={"noreferrer"}
+            target={"_blank"}
+            href={socialItem.link}
+          >
             <Button
               w={"300px"}
               h={"50px"}
@@ -93,7 +90,7 @@ const Socials = () => {
                 {socialItem.title}
               </Text>
             </Button>
-          </Link>
+          </a>
         ))}
       </Flex>
     </Box>
