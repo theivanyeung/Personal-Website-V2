@@ -48,6 +48,11 @@ export const PastProjects = [
     image: "./images/daily-brew-preview.png",
     link: DAILY_BREW,
   },
+  {
+    id: "prodicity",
+    image: "./images/prodicity-old-preview.png",
+    link: "/",
+  },
 ];
 
 export const PopularPosts = [

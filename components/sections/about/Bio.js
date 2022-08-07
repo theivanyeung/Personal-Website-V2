@@ -4,7 +4,7 @@ const timeline = [
   { id: "1", text: "2003 - Born in Queens, New York City (I Love NYC!)" },
   { id: "2", text: "2019 - Moved to Silicon Valley from North Carolina" },
   { id: "3", text: "2019 - Co-founded a hackathon, HexaHacks" },
-  { id: "4", text: "2019 - Started his passion of development" },
+  { id: "4", text: "2019 - Started his passion of design and development" },
   { id: "5", text: "2020 - Interned at an AI Company, Titan Acacia" },
   { id: "6", text: "2021 - Graduated from Cupertino High School" },
   {
@@ -15,7 +15,10 @@ const timeline = [
     id: "8",
     text: "2022 - Started and failed two startups, LangSwap and Prodicity",
   },
-  { id: "9", text: "2022 - Started a third startup, Future Technologies" },
+  {
+    id: "9",
+    text: '2022 - Started a third startup, Prodicity ("borrowed" previous branding)',
+  },
   { id: "10", text: "2022 - Started a podcast channel, Every Other Morning" },
 ];
 

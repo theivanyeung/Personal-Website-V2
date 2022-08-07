@@ -15,7 +15,7 @@ const projects = [
     link: PRODICITY,
     image: "./images/prodicity-icon.png",
     title: "Prodicity",
-    text: "Gamified Productivity",
+    text: "Live Virtual Events",
   },
 ];
 
