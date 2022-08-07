@@ -122,7 +122,12 @@ const Header = (props) => {
                   <MenuItem>{navItem.name}</MenuItem>
                 </Link>
               ))}
-              <a rel={"noreferrer"} target={"_blank"} href={""} path={path}>
+              <a
+                rel={"noreferrer"}
+                target={"_blank"}
+                href={"./files/resume.pdf"}
+                path={path}
+              >
                 <MenuItem>Resume</MenuItem>
               </a>
               <a

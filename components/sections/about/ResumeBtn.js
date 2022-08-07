@@ -14,7 +14,7 @@ const ResumeBtn = () => {
         colorScheme={"whiteAlpha"}
         display={{ base: "none", lg: "block" }}
       >
-        <a rel={"noreferrer"} target={"_blank"} href={""}>
+        <a rel={"noreferrer"} target={"_blank"} href={"./files/resume.pdf"}>
           <Text
             fontWeight={"light"}
             fontSize={"5xl"}
@@ -37,7 +37,7 @@ const ResumeBtn = () => {
         colorScheme={"whiteAlpha"}
         display={{ base: "block", lg: "none" }}
       >
-        <a rel={"noreferrer"} target={"_blank"} href={""}>
+        <a rel={"noreferrer"} target={"_blank"} href={"./files/resume.pdf"}>
           <Text
             fontWeight={"light"}
             fontSize={"5xl"}
