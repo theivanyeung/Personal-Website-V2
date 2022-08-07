@@ -12,7 +12,7 @@ const projects = [
   },
   {
     id: "work",
-    link: PRODICITY,
+    link: `${PRODICITY}register`,
     image: "./images/prodicity-icon.png",
     title: "Prodicity",
     text: "Live Virtual Events",
@@ -31,7 +31,7 @@ const Showcase = () => {
         display={{ base: "none", xxl: "block" }}
       >
         <Box mt={"96px"}>
-          <Flex w={"50vw"} justifyContent={"space-between"}>
+          <Flex w={"825px"} justifyContent={"space-between"}>
             {projects.map((project) => (
               <Box key={project.id}>
                 <a rel={"noreferrer"} target={"_blank"} href={project.link}>
